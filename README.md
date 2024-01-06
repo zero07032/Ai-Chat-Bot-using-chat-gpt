@@ -2,7 +2,7 @@
 
 Quick Start:
 
-    [https://platform.openai.com/docs/quickstart?context=python](https://platform.openai.com/docs/quickstart?context=python#:~:text=Making%20an%20API%20request)
+    https://platform.openai.com/docs/quickstart/quickstart-language-selection
 
 Generate Api Key:
 

@@ -14,7 +14,8 @@
 
 <section class="container">
     <div class="my-4">
-        <form class="row g-3 needs-validation" novalidate>
+        <form action="{% url 'get-answer' %}" method="POST" class="row g-3 needs-validation" novalidate>
+            {% csrf_token %}
             <div class="col-md-4">
                 <label class="form-label">Ask Question</label>
                 <input type="text" class="form-control" required name="question">
@@ -27,10 +28,7 @@
 
         <div class="my-4">
             <h5>Result...</h5><hr>
-            <div class="result p-2">
-                oke nice
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere atque voluptas odio nihil facilis fugit qui, laborum eaque molestias, id possimus iste nemo officia architecto ipsa. Maiores sequi aliquid vero!
-            </div>
+            <div class="result p-2">{{question_answer}}</div>
         </div>
     </div>
 </section>

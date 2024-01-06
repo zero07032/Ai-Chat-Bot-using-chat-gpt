@@ -6,13 +6,21 @@
 
 {% block content %}
 <style>
-    .result{
+    .result {
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         border-radius: 3px;
+    }
+    .page_title{
+        background-color: green;
+        color: white;
     }
 </style>
 
 <section class="container">
+    <div class="d-flex justify-content-center my-3">
+        <h5 class="text-center page_title px-3 py-2">Ai Chat Bot</h5>
+    </div>
+
     <div class="my-4">
         <form action="{% url 'get-answer' %}" method="POST" class="row g-3 needs-validation" novalidate>
             {% csrf_token %}
@@ -27,7 +35,8 @@
         </form>
 
         <div class="my-4">
-            <h5>Result...</h5><hr>
+            <h5>Result...</h5>
+            <hr>
             <div class="result p-2">{{question_answer}}</div>
         </div>
     </div>

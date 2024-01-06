@@ -1,10 +1,19 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block title %}Home{% endblock %}
 
-{% block content %}
-<section class="container">
-    <div class="row justify-content-center">
 
+
+{% block content %}
+<style>
+    .result{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 3px;
+    }
+</style>
+
+<section class="container">
+    <div class="my-4">
         <form class="row g-3 needs-validation" novalidate>
             <div class="col-md-4">
                 <label class="form-label">Ask Question</label>
@@ -16,6 +25,13 @@
             </div>
         </form>
 
+        <div class="my-4">
+            <h5>Result...</h5><hr>
+            <div class="result p-2">
+                oke nice
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere atque voluptas odio nihil facilis fugit qui, laborum eaque molestias, id possimus iste nemo officia architecto ipsa. Maiores sequi aliquid vero!
+            </div>
+        </div>
     </div>
 </section>
 
